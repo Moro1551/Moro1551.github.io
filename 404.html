@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crystal H2O Pool Services | Mantenimiento y limpieza de piscinas</title>
+    <meta
+      name="description"
+      content="Crystal H2O Pool Services: limpieza, mantenimiento y remodelación de piscinas residenciales en Georgia. Solicita tu cotización."
+    />
+    <meta name="theme-color" content="#2D4453" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    <!-- Open Graph / redes sociales (imagen: fotograma del video de portada aprobado) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Crystal H2O Pool Services" />
+    <meta property="og:title" content="Crystal H2O Pool Services" />
+    <meta property="og:description" content="Tu piscina en las mejores manos. Limpieza, mantenimiento y remodelación de piscinas." />
+    <meta property="og:image" content="/images/posters/og-portada.jpg" />
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <!-- TODO: cuando exista dominio, añadir <link rel="canonical" href="https://..."> y URLs absolutas en og:image -->
+
+    <link rel="preload" as="image" href="/images/logo-recortado.webp" type="image/webp" fetchpriority="high" />
+    <!--
+      Precarga de la foto principal de la página que se abre (portada o banner de una página interior),
+      para que aparezca antes. Si cambias una foto de banner en src/data/banners.ts, cámbiala también aquí.
+    -->
+    <script>
+      ;(() => {
+        const preload = (attrs) => document.head.appendChild(Object.assign(document.createElement('link'), { rel: 'preload', as: 'image', fetchPriority: 'high', ...attrs }))
+        const path = location.pathname.replace(/\/+$/, '') || '/'
+        if (path === '/') {
+          // Foto de portada (config/site.ts → hero.image). Si cambias la foto, cámbiala también aquí.
+          preload({ href: '/images/hero-water.webp', media: 'not all and (max-width: 1023px) and (orientation: portrait)' })
+          preload({ href: '/images/hero-water-movil.webp', media: '(max-width: 1023px) and (orientation: portrait)' })
+          return
+        }
+        const banners = { '/servicios': 'piscina-4-aspirado', '/nosotros': 'piscina-2-jardin', '/trabajos': 'piscina-3-escalones', '/preguntas': 'piscina-1-agua', '/contacto': 'piscina-2-jardin', '/opiniones': 'piscina-5-azul' }
+        const name = banners[path]
+        if (name) {
+          const base = '/images/carrusel/' + name
+          preload({ href: base + '.webp', imageSrcset: base + '-640.webp 640w, ' + base + '.webp 1080w', imageSizes: '100vw' })
+        }
+      })()
+    </script>
+    <script type="module" crossorigin src="/assets/index-BXQFmM_z.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/jsx-runtime-DyZJNswf.js">
+    <link rel="modulepreload" crossorigin href="/assets/Button-Bz8oTa8e.js">
+    <link rel="modulepreload" crossorigin href="/assets/SwitchLayoutGroupContext-Co-Bc9L-.js">
+    <link rel="stylesheet" crossorigin href="/assets/index-DcBAnGXl.css">
+    <link rel="modulepreload" href="/assets/features-DJpKZxIQ.js">
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>
+      Crystal H2O Pool Services — activa JavaScript para ver esta página. / Please enable JavaScript to view this page.
+    </noscript>
+  </body>
+</html>

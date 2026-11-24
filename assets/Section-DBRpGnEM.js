@@ -1,0 +1,1 @@
+import{i as e,r as t}from"./Button-Bz8oTa8e.js";import{t as n}from"./jsx-runtime-DyZJNswf.js";var r=n();function i({id:n,children:i,className:a,labelledBy:o,compact:s}){return(0,r.jsx)(`section`,{id:n,"aria-labelledby":o,className:e(s?`py-16 sm:py-20 lg:py-24`:`py-20 sm:py-24 lg:py-32`,a),children:(0,r.jsx)(t,{children:i})})}export{i as t};
